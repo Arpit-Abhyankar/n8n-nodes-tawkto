@@ -1,0 +1,85 @@
+name: Bug Report
+description: Report a bug with the Tawk.to n8n node
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill in the details below so we can reproduce and fix it.
+
+  - type: input
+    id: n8n-version
+    attributes:
+      label: n8n Version
+      description: "Run `n8n --version` or check Settings > About in the n8n UI"
+      placeholder: "e.g. 1.70.0"
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node Package Version
+      description: "Version of n8n-nodes-tawkto you have installed"
+      placeholder: "e.g. 0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: node-type
+    attributes:
+      label: Which node?
+      options:
+        - Tawk.to Trigger
+        - Tawk.to (REST API)
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: "A clear description of the bug"
+      placeholder: "When I try to... it does... instead of..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: "How can we reproduce this?"
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: "What should have happened instead?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error logs or screenshots
+      description: "Paste any error messages, n8n execution logs, or screenshots"
+      render: shell
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Self-hosted (Docker)
+        - Self-hosted (npm)
+        - n8n Cloud
+        - Local development (npm run dev)
+    validations:
+      required: true
