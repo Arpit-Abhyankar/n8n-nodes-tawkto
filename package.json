@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-tawkto",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community node for Tawk.to live chat integration - trigger workflows on chat events and interact with the Tawk.to REST API",
 	"license": "MIT",
 	"homepage": "https://github.com/Arpit-Abhyankar/n8n-nodes-tawkto",
