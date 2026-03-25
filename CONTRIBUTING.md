@@ -131,4 +131,4 @@ icons/                # Node icons (SVG)
 
 ## Questions?
 
-Open an [issue](https://github.com/arpitabhyankar/n8n-nodes-tawkto/issues) or start a [discussion](https://github.com/arpitabhyankar/n8n-nodes-tawkto/discussions) if you're unsure about anything.
+Open an [issue](https://github.com/Arpit-Abhyankar/n8n-nodes-tawkto/issues) or start a [discussion](https://github.com/Arpit-Abhyankar/n8n-nodes-tawkto/discussions) if you're unsure about anything.
